@@ -6,7 +6,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6f48389-cda0-411a-8a3a-cbf2140a2b6c" name="Changes" comment="commit show huge number" />
+    <list default="true" id="e6f48389-cda0-411a-8a3a-cbf2140a2b6c" name="Changes" comment="Ajout du doubllylinkedlist.c et .h">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IHMHugeNumber/ShowHugeNumber.c" beforeDir="false" afterPath="$PROJECT_DIR$/IHMHugeNumber/ShowHugeNumber.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
