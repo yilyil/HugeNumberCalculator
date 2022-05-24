@@ -24,7 +24,13 @@ void printHugeUnsignedInt (const HugeUnsignedInt* hugeUnsignedInt) {
 }
 
 void printHugeInt (const HugeInt* hugeInt) {
+        char* hugeIntString = HugeIntToString (hugeInt);
+    printf ("%s\n", hugeIntString);
+    free (hugeIntString);
 }
 
 void printHugeFloat (const HugeFloat* hugeFloat) {
+    char* hugeFloatString = HugeFloatToString (hugeFloat);
+    printf ("%s\n", hugeFloatString);
+    free (hugeFloatString);
 }
