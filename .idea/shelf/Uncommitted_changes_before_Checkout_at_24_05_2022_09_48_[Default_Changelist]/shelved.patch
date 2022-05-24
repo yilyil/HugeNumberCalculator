@@ -1,0 +1,68 @@
+Index: UseHugeNumber/Type/HugeUnsignedInt.c
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//\n// Created by Margot, une écrivaine on 20/05/2022.\n//\n\n#include \"HugeUnsignedInt.h\"\n/*\nHugeUnsignedInt* createHugeUnsignedInt (void) {\n    return NULL;\n}\n\nHugeUnsignedInt* createHugeUnsignedIntFromString (const char* digitString) {\n    return NULL;\n}\n\nHugeUnsignedInt* createHugeUnsignedIntFromHugeUnsignedInt (const HugeUnsignedInt* hugeUnsignedInt, const unsigned int size) {\n    return NULL;\n}\n\nvoid deleteHugeUnsignedInt (const HugeUnsignedInt* hugeUnsignedInt) {\n}\n\nint getHugeUnsignedIntLength (const HugeUnsignedInt* hugeUnsignedInt) {\n    return 0;\n}\n\nHugeUnsignedInt* simplifyHugeUnsignedInt (const HugeUnsignedInt* hugeUnsignedInt) {\n    return NULL;\n}\n*/\n#include \"HugeUnsignedInt.h\"\n\nHugeUnsignedInt* createHugeUnsignedInt (void) {\n    return createDoublyLinkedList ();\n}\n\nHugeUnsignedInt* createHugeUnsignedIntFromString (const char* digitString) {\n    return simplifyHugeUnsignedInt (createDoublyLinkedListFromString (digitString));\n}\n\nHugeUnsignedInt* createHugeUnsignedIntFromHugeUnsignedInt (const HugeUnsignedInt* hugeUnsignedInt, const unsigned int size) {\n    HugeUnsignedInt* hugeUnsignedIntCopy = createHugeUnsignedInt ();\n    if ((hugeUnsignedIntCopy != NULL) && (hugeUnsignedInt != NULL)) {\n        Node* node = hugeUnsignedInt->start;\n        for (unsigned int i = 0; ((i < size) || (size == 0)) && !isNodeEmpty (node); i++) {\n            addDigitAtEnd (hugeUnsignedIntCopy, node->digit);\n            node = node->next;\n        }\n    }\n    return hugeUnsignedIntCopy;\n}\n\nvoid deleteHugeUnsignedInt (HugeUnsignedInt* hugeUnsignedInt) {\n    deleteDoublyLinkedList (hugeUnsignedInt);\n}\n\nint getHugeUnsignedIntLength (const HugeUnsignedInt* hugeUnsignedInt) {\n    return getDoublyLinkedListLength (hugeUnsignedInt);\n}\n\nHugeUnsignedInt* simplifyHugeUnsignedInt (HugeUnsignedInt* hugeUnsignedInt) {\n    if (hugeUnsignedInt != NULL) {\n        char simplify = 1;\n        while ((!isNodeEmpty (hugeUnsignedInt->start)) && simplify) {\n            if ((hugeUnsignedInt->start->digit == 0) && hugeUnsignedInt->start != hugeUnsignedInt->end) {\n                removeStartFromDoublyLinkedList (hugeUnsignedInt);\n            } else {\n                simplify = 0;\n            }\n        }\n    }\n    return hugeUnsignedInt;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/UseHugeNumber/Type/HugeUnsignedInt.c b/UseHugeNumber/Type/HugeUnsignedInt.c
+--- a/UseHugeNumber/Type/HugeUnsignedInt.c	
++++ b/UseHugeNumber/Type/HugeUnsignedInt.c	
+@@ -3,7 +3,7 @@
+ //
+ 
+ #include "HugeUnsignedInt.h"
+-/*
++
+ HugeUnsignedInt* createHugeUnsignedInt (void) {
+     return NULL;
+ }
+@@ -26,47 +26,4 @@
+ HugeUnsignedInt* simplifyHugeUnsignedInt (const HugeUnsignedInt* hugeUnsignedInt) {
+     return NULL;
+ }
+-*/
+-#include "HugeUnsignedInt.h"
+-
+-HugeUnsignedInt* createHugeUnsignedInt (void) {
+-    return createDoublyLinkedList ();
+-}
+ 
+-HugeUnsignedInt* createHugeUnsignedIntFromString (const char* digitString) {
+-    return simplifyHugeUnsignedInt (createDoublyLinkedListFromString (digitString));
+-}
+-
+-HugeUnsignedInt* createHugeUnsignedIntFromHugeUnsignedInt (const HugeUnsignedInt* hugeUnsignedInt, const unsigned int size) {
+-    HugeUnsignedInt* hugeUnsignedIntCopy = createHugeUnsignedInt ();
+-    if ((hugeUnsignedIntCopy != NULL) && (hugeUnsignedInt != NULL)) {
+-        Node* node = hugeUnsignedInt->start;
+-        for (unsigned int i = 0; ((i < size) || (size == 0)) && !isNodeEmpty (node); i++) {
+-            addDigitAtEnd (hugeUnsignedIntCopy, node->digit);
+-            node = node->next;
+-        }
+-    }
+-    return hugeUnsignedIntCopy;
+-}
+-
+-void deleteHugeUnsignedInt (HugeUnsignedInt* hugeUnsignedInt) {
+-    deleteDoublyLinkedList (hugeUnsignedInt);
+-}
+-
+-int getHugeUnsignedIntLength (const HugeUnsignedInt* hugeUnsignedInt) {
+-    return getDoublyLinkedListLength (hugeUnsignedInt);
+-}
+-
+-HugeUnsignedInt* simplifyHugeUnsignedInt (HugeUnsignedInt* hugeUnsignedInt) {
+-    if (hugeUnsignedInt != NULL) {
+-        char simplify = 1;
+-        while ((!isNodeEmpty (hugeUnsignedInt->start)) && simplify) {
+-            if ((hugeUnsignedInt->start->digit == 0) && hugeUnsignedInt->start != hugeUnsignedInt->end) {
+-                removeStartFromDoublyLinkedList (hugeUnsignedInt);
+-            } else {
+-                simplify = 0;
+-            }
+-        }
+-    }
+-    return hugeUnsignedInt;
+-}
+\ No newline at end of file
