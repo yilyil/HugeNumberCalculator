@@ -2,11 +2,7 @@
 <project version="4">
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
-    </configurations>
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="d8f8d2ca-a504-4c19-8c50-6147cba2f346" name="Default Changelist" comment="Ajout de la branche dev_HugeUnsignedInt" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,99 +14,24 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectId" id="29Q3l48ZlERPE1sdZsKz0ruK1dl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="cf.first.check.clang-format" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/UseHugeNumber/Type" />
+
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d8f8d2ca-a504-4c19-8c50-6147cba2f346" name="Default Changelist" comment="" />
-      <created>1653031632755</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1653031632755</updated>
-      <workItem from="1653031637457" duration="1630000" />
-      <workItem from="1653377428701" duration="355000" />
-      <workItem from="1653377825671" duration="1120000" />
-      <workItem from="1653380349560" duration="396000" />
-    </task>
-    <task id="LOCAL-00001" summary="Ajout de la branche dev_lot5">
-      <created>1653032066658</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1653032066658</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Ajout de la branche dev_lot5">
-      <created>1653033196453</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1653033196453</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Ajout de la branche dev_HugeUnsignedInt">
-      <created>1653378347692</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1653378347692</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Ajout de la branche dev_HugeUnsignedInt">
-      <created>1653378419418</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1653378419418</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Ajout de la branche dev_HugeUnsignedInt">
-      <created>1653378529278</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1653378529278</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout de la branche dev_lot5" />
-    <MESSAGE value="Ajout de la branche dev_HugeUnsignedInt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la branche dev_HugeUnsignedInt" />
+
   </component>
 </project>
